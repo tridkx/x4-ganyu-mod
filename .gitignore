@@ -1,0 +1,28 @@
+# game / mod assets must never be committed
+*.xac
+*.xsm
+*.cat
+*.dat
+*.gz
+*.dds
+*.png
+*.bmp
+*.jpg
+*.blend
+*.blend1
+*.npz
+*.npy
+
+# extracted, generated or downloaded content
+assets/
+extensions/
+tex_out/
+x4cc_*/
+preview/
+report/
+work/
+vanilla/
+
+# python
+__pycache__/
+*.pyc
