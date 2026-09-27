@@ -1,5 +1,9 @@
 # 甘雨 Ganyu → X4: Foundations **Argon 女性** NPC
 
+> 源码：<https://github.com/tridkx/x4-ganyu-mod> · 成品 mod 见 [Releases](https://github.com/tridkx/x4-ganyu-mod/releases)
+> —— 与作者另外几个 X4 项目同源：[x4-character-retarget](https://github.com/tridkx/x4-character-retarget)（管线与文档）、
+> [x4-lumine-mod](https://github.com/tridkx/x4-lumine-mod)、[x4-boru-mod](https://github.com/tridkx/x4-boru-mod)。
+
 把《原神》的**甘雨**（MMD/PMX，275 骨，模型改造：观海 / BiliBili 观海子）
 移植成《X4：基石》里的 **Argon 女性** NPC 外观，替换头部与躯干网格。
 
@@ -16,11 +20,11 @@ python tools/verify_mod.py  --mode add      # 发版前自检
 | **全量替换** `--mode replace` | 把 **122 个** Argon 女性 macro 的 `<models>` 逐个改写成甘雨，含不走池的剧情 NPC —— 所有 Argon 女性都是她 | 想看模型出现在所有地方 / 调试 |
 
 两种形态共用同一个扩展 id（`x4_ganyu_mod`）与同一套资产路径，**同时只能装一个**。
-发布包已经分开：
+发布包已经分开（[Releases](https://github.com/tridkx/x4-ganyu-mod/releases)；`tools/build_release.py` 生成到 `work/dist/`）：
 
 ```
-work/dist/x4_ganyu_argon_add_v1.0.zip       ← 仅增加（推荐）
-work/dist/x4_ganyu_argon_replace_v1.0.zip   ← 全量替换
+x4_ganyu_argon_add_v1.0.zip       ← 仅增加（推荐）
+x4_ganyu_argon_replace_v1.0.zip   ← 全量替换
 ```
 
 解压到 `X4 Foundations/extensions/` 下即可（压缩包里已经是 `x4_ganyu_mod/` 一层），
